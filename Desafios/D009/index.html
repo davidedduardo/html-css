@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Videos</title>
+    <style>
+        body{
+            background-color:black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: white;
+            font-size: 50px;
+        }
+        .thumbnails{
+            display: grid;
+            grid-template-columns: repeat(2, 300px); /* largura fixa */
+            gap: 20px;
+            justify-content: center; /* centraliza o grid */
+            margin-top: 30px;
+        }
+        .thumbnails a img{
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .thumbnails a img:hover{
+            transform: scale(1.05);
+        }
+        p{    
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Videos legais para assistir</h1>
+    <p>Clique em um dos cards para ir para video</p>
+    <div class="thumbnails">
+        <a href="hardware.html">
+            <img src="imagem/thumb-hardware.png" alt="Thumbnail do curso de Hardware">
+        </a>
+        <a href="html.html">
+            <img src="imagem/thumb-html.png" alt="Thumbnail do curso de HTML">
+        </a>
+        <a href="python.html">
+            <img src="imagem/thumb-python.png" alt="Thumbnail do curso de Python">
+        </a>
+        <a href="js.html">
+            <img src="imagem/thumb-js.png" alt="Thumbnail do curso de JavaScript">
+        </a>
+    </div>
+</body>
+</html>
