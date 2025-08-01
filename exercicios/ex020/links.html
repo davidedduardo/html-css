@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color:blue;
+        } 
+        
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        .especial {
+            background-color: #e97d7d;
+        }
+        .especial::before{
+            content: '⇒ ';
+        }
+        .especial::after{
+            content: ' ⇐';
+        }
+        .topo{
+            margin: 0 auto 80px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/davidedduardo" target="_blank">Repositório do github</a></li>
+        <li><a href="https://www.youtube.com/@davidedduardo" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.instagram.com/davidedduardo/" target="_blank" class="especial">Perfil do instagram</a></li>
+        
+    </ul>
+ </body>
+ </html>

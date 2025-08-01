@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento com Fontes Personalizadas</title>
+    <style>
+        /* Fontes do Google primeiro */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300;400;700&family=Inter:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Playfair+Display:wght@400;700&family=Nunito:wght@300;400;700&family=Lato:wght@300;400;700&family=Permanent+Marker&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
+        
+        /* Fonte local */
+        @font-face {
+            font-family: 'lamcho';
+            src: url('LAMCHO.otf') format('opentype'), 
+                 url('LAMCHO.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        /* Estilos base */
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            color: #000;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Títulos */
+        h1 {
+            font-family: 'lamcho', 'Permanent Marker', cursive;
+            font-size: 3em;
+            margin: 0 0 0.5em 0;
+            color: inherit;
+        }
+        
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+            font-weight: 400;
+            margin: 1em 0 0.5em 0;
+        }
+        
+        /* Parágrafos */
+        p {
+            margin: 0 0 1em 0;
+            max-width: 65ch; /* Melhora a legibilidade */
+        }
+    </style>
+</head>
+<body>
+    <h1>QUEIJO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis adipisci corporis sit nesciunt repudiandae alias ipsam rerum. Aliquam ipsam blanditiis voluptatibus ab itaque aperiam cumque laudantium qui! Neque, blanditiis.</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet vitae repudiandae necessitatibus voluptatum dolorum quibusdam. Nesciunt quisquam deserunt esse veritatis! Laboriosam, possimus? Dignissimos optio provident ipsam magnam nesciunt fuga!</p>
+</body>
+</html>
