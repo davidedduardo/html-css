@@ -9,18 +9,45 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+        div#formulario{
+            width: 300px;
+            margin: 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .cadastro {
+            margin-bottom: 15px;
+            font-weight: bolder;
+        }
+        .botao {
+            width: 80%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
-
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <div id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p class="cadastro">
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" class="botao">
+            </p>
+            <p class="cadastro">
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" class="botao">
+            </p>
+            <p class="cadastro">
+                <label for="isenha">Senha: <input type="password" name="senha" id="isenha" class="botao">
+                </label>
+            </p>
+            <p class="cadastro">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
 </body>
-
 </html>
