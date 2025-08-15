@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt commodi sunt quod, possimus iste delectus cumque asperiores expedita porro voluptas, vitae esse error molestias? Laudantium nam ad porro deserunt nesciunt!</p>
+
+    <ul>
+        <li><a href="paginas-extras/page001.html" target="frame">primeira página</a></li>
+        <li><a href="paginas-extras/page002.html" target="frame">segunda página</a></li>
+        <li><a href="paginas-extras/page003.html" target="frame">terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quae aperiam suscipit architecto itaque, voluptatum quisquam, ad ea et deserunt consequuntur officia ipsa tenetur! Tempore nulla eligendi ad maxime sit!
+    Modi accusantium, corporis ut dolorem iste animi. Deleniti quaerat tempora voluptatem harum unde ipsam officiis explicabo nulla aliquam voluptates animi, accusantium quae beatae, nesciunt earum sint ratione illum vel consequuntur.
+    Perferendis accusantium, unde harum nobis fugit esse vero doloremque cum sint perspiciatis optio autem provident placeat nostrum non ipsum! Eaque neque repellendus quo cupiditate consequatur repudiandae. Id voluptas atque illum?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur earum ratione saepe quis placeat amet repellendus, debitis vitae itaque iure possimus voluptatum sit libero magnam expedita aliquam impedit necessitatibus cum.</p><img src='imagens/cachorro.jpeg' height='100' width='100'>">
+       Infelizmente seu navegador não é compativel com isso.
+    </iframe>
+</body>
+</html>
