@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#000000" pattern="^#[0-9a-fA-F]{6}$">
+        </p>
+        <p>
+            <label for="inivel">Nivel de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" step="1" value="100">
+        </p>
+        <p>
+            <label for="iarquivo">Anexo: </label>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf,.xls,.xlsx,.doc,.docx,.jpg,.png, .gif, .txt, .zip, .rar, .7z, .webm" multiple>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>

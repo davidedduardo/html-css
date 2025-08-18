@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            margin-right: 2%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #218838;
+        }
+        p {
+            margin: 0 0 15px;
+            padding: 10px;
+        }
+        #resultado {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de Formulario</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form id="meuForm">
         <p>
             <label for="iusu">Usuario:</label>
             <input type="text" name="usuario" id="iusu" required minlength="5" maxlength="15" placeholder="nome do usuario" autocomplete="username">
@@ -23,3 +82,15 @@
     </form>
 </body>
 </html>
+<div id="resultado"></div>
+<script>
+  document.getElementById("meuForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  let usuario = document.getElementById("iusu").value;
+  let senha = document.getElementById("isen").value;
+    let senhaOculta = "•".repeat(senha.length);
+  document.getElementById("resultado").innerHTML = 
+    `<p><strong>Usuário:</strong> ${usuario}</p>
+     <p><strong>Senha:</strong> ${senhaOculta}</p>`;
+});
+</script>
